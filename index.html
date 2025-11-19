@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Tender Render Ready — Kitoblar</title></head>
+<body>
+<h1>Yuklangan fayllar (tender_render_ready)</h1>
+<ul>
+{% for f in files %}
+  <li><a href="{{ f.url }}">{{ f.file_name }}</a> — {{ f.storage }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
